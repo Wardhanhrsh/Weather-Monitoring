@@ -7,7 +7,7 @@ The app includes a configurable alert system to notify the user if specific weat
 ## Features
     
 - Real-Time Weather Data: Fetch current weather details like temperature, humidity, wind speed and weather description.
-preview 1.png
+(/preview 1.png)
 - Unit Selection: Allows users to select temperature units between Celsius(°C) and Kelvin(k).
 - Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
 
