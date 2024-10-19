@@ -1,8 +1,8 @@
 🌤️ Real-Time Weather Monitoring Application
 
-A real-time data processing system to allow users to fetch real-time weather data for metros in India using OpenWeatherMap API. 
+A real-time data processing system to allow users to fetch real-time weather data of metro cities in India using OpenWeatherMap API. 
 
-The app includes a configurable alert systems to notify the user if specific weather thresholds, such as temperature, are breached.
+The app includes a configurable alert system to notify the user if specific weather thresholds, such as temperature, are breached.
 
 🚀 Features
     
@@ -27,7 +27,7 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 2. Install Dependencies
     
-    - npm install
+    npm install
 
 3. Get an API Key
     
@@ -36,7 +36,7 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 4. Run the Application
 
-    - npm start
+    npm start
 
 ## How to use 
 
@@ -64,13 +64,13 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 🎨 UI Preview
 
-    - Weather Data
+    Weather Data
 
          Displays city name, current average temperature, and other weather details.
 
 🌍 API Used
     
-    - OpenWeatherMap API: Provides real-time weather data for metro cities in India.
+    OpenWeatherMap API: Provides real-time weather data for metro cities in India.
 
 Author
     - Harshwardhan - https://github.com/Wardhanhrsh
