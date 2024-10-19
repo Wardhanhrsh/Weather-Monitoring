@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+🌤️ Real-Time Weather Monitoring Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time data processing system to allow users to fetch real-time weather data for metros in India using OpenWeatherMap API. 
 
-## Available Scripts
+The app includes a configurable alert systems to notify the user if specific weather thresholds, such as temperature, are breached.
 
-In the project directory, you can run:
+🚀 Features
 
-### `npm start`
+- Real-Time Weather Data: Fetch current weather details like temperature, humidity, wind speed and weather description.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Unit Selection: Allows users to select temperature units between Celsius(°C) and Kelvin(k).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
 
-### `npm test`
+🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React: Frontend framework for building the UI.
 
-### `npm run build`
+- Axios: For making HTTP requests to the OpenWeatherMap API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- OpenWeatherMap API: Source of weather data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CSS: For styling the components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🖥️ Installation & Setup
 
-### `npm run eject`
+1. Clone the repository
+    - git colne https://github.com/yourusername/weather-monitering.git
+    - cd weather-monitoring
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install Dependencies
+    - npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Get an API Key
+    - Go to OpenWeatherMap and sign up for a free API key.
+    - Replace the API key in the project at App.js file in "const url = {API} "
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Run the Application
+    - npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## How to use 
 
-## Learn More
+1. Search for a location:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    -Type the name of any city in the search bar and hit Enter.
+    -The app will display current weather data for that location, including:
+        - Current temperature
+        - Minimum and maximum temperatures
+        - Weather description (e.g., clear, cloudy)
+        - Feels-like temperature
+        - Humidity and wind speed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Set Temperature Threshold:
 
-### Code Splitting
+    - In the UI, set a custom temperature threshold (in °C).
+    - If the temperature exceeds the threshold for the
+    specified number of consecutive updates, an alert message will be logged in the console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Console Alerts:
 
-### Analyzing the Bundle Size
+    - If the current temperature exceeds the set threshold, the app will display a console alert message like:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    "ALERT: Temperature exceeds 35°C."
 
-### Making a Progressive Web App
+🎨 UI Preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Weather Data
 
-### Advanced Configuration
+        - Displays city name, current average temperature, and other weather details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🌍 API Used
+    
+    - OpenWeatherMap API: Provides real-time weather data for metro cities in India.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author
+- Harshwardhan - https://github.com/Wardhanhrsh
