@@ -48,11 +48,11 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 -Type the name of any city in the search bar and hit Enter.
 -The app will display current weather data for that location, including:
-    - Current temperature
-    - Minimum and maximum temperatures
-    - Weather description (e.g., clear, cloudy)
-    - Feels-like temperature
-    - Humidity and wind speed
+- Current temperature
+- Minimum and maximum temperatures
+- Weather description (e.g., clear, cloudy)
+- Feels-like temperature
+- Humidity and wind speed
 
 2. Set Temperature Threshold:
 
