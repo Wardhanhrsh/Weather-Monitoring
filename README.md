@@ -5,22 +5,18 @@ A real-time data processing system to allow users to fetch real-time weather dat
 The app includes a configurable alert systems to notify the user if specific weather thresholds, such as temperature, are breached.
 
 🚀 Features
-
-    - Real-Time Weather Data: Fetch current weather details like temperature, humidity, wind speed and weather description.
-
-    - Unit Selection: Allows users to select temperature units between Celsius(°C) and Kelvin(k).
-
-    - Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
+    
+- Real-Time Weather Data: Fetch current weather details like temperature, humidity, wind speed and weather description.
+- Unit Selection: Allows users to select temperature units between Celsius(°C) and Kelvin(k).
+- Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
 
 🛠️ Technologies Used
+        
 
-    - React: Frontend framework for building the UI.
-
-    - Axios: For making HTTP requests to the OpenWeatherMap API.
-
-    - OpenWeatherMap API: Source of weather data.
-
-    - CSS: For styling the components.
+- React: Frontend framework for building the UI.
+- Axios: For making HTTP requests to the OpenWeatherMap API.
+- OpenWeatherMap API: Source of weather data.
+- CSS: For styling the components.
 
 🖥️ Installation & Setup
 
