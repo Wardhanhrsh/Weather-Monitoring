@@ -27,7 +27,7 @@ The app includes a configurable alert system to notify the user if specific weat
 
 2. Install Dependencies
     
-    npm install
+        npm install
 
 3. Get an API Key
     
@@ -36,7 +36,7 @@ The app includes a configurable alert system to notify the user if specific weat
 
 4. Run the Application
 
-    npm start
+        npm start
 
 ## How to use 
 
