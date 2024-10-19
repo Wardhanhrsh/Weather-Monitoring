@@ -65,15 +65,13 @@ The app includes a configurable alert system to notify the user if specific weat
 
         "ALERT: Temperature exceeds 35°C."
 
-🎨 UI Preview
-
-    Weather Data
-
-         Displays city name, current average temperature, and other weather details.
+🎨UI Preview
+- Weather Data
+    - Displays city name, current average temperature, and other weather details.
 
 🌍 API Used
     
-    OpenWeatherMap API: Provides real-time weather data for metro cities in India.
+- OpenWeatherMap API: Provides real-time weather data for metro cities in India.
 
 Author
     - Harshwardhan - https://github.com/Wardhanhrsh
