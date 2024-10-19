@@ -25,7 +25,7 @@ The app includes a configurable alert system to notify the user if specific weat
 
 1. Clone the repository
 
-    - git clone https://github.com/yourusername/weather-monitering.git
+    - git clone https://github.com/yourusername/weather-monitoring.git
     - cd weather-monitoring
 
 2. Install Dependencies
