@@ -46,8 +46,8 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 1. Search for a location:
 
--Type the name of any city in the search bar and hit Enter.
--The app will display current weather data for that location, including:
+- Type the name of any city in the search bar and hit Enter.
+- The app will display current weather data for that location, including:
 - Current temperature
 - Minimum and maximum temperatures
 - Weather description (e.g., clear, cloudy)
