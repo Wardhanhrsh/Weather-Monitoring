@@ -10,7 +10,7 @@ function App() {
   const [breachCount, setBreachCount] = useState(0); // Track the number of breached updates
   const [unit, setUnit] = useState('Celsius')
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=83127154b5274060e1c3a2f771cfa45b`
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid={Your API Key}`
 
 
 const searchLocation = (event) => {

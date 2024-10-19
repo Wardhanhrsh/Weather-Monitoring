@@ -35,7 +35,8 @@ The app includes a configurable alert system to notify the user if specific weat
 3. Get an API Key
     
     - Go to OpenWeatherMap and sign up for a free API key.
-    - Replace the API key in the project at App.js file in "const url = {API} "
+    - Replace the {API key} with your API key generated from OpenWeatherMap API in the project in App.js file.
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid={Your API Key}`.
 
 4. Run the Application
 
