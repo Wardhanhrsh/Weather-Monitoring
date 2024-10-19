@@ -25,7 +25,7 @@ The app includes a configurable alert system to notify the user if specific weat
 
 1. Clone the repository
 
-    - git colne https://github.com/yourusername/weather-monitering.git
+    - git clone https://github.com/yourusername/weather-monitering.git
     - cd weather-monitoring
 
 2. Install Dependencies
@@ -74,6 +74,3 @@ The app includes a configurable alert system to notify the user if specific weat
 🌍 API Used
     
 - OpenWeatherMap API: Provides real-time weather data for metro cities in India.
-
-Author
-    - Harshwardhan - https://github.com/Wardhanhrsh
