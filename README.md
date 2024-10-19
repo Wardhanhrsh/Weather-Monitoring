@@ -26,12 +26,12 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 1. Clone the repository
 
-    git colne https://github.com/yourusername/weather-monitering.git
-    cd weather-monitoring
+- git colne https://github.com/yourusername/weather-monitering.git
+- cd weather-monitoring
 
 2. Install Dependencies
     
-    npm install
+- npm install
 
 3. Get an API Key
     
@@ -40,7 +40,7 @@ The app includes a configurable alert systems to notify the user if specific wea
 
 4. Run the Application
 
-    npm start
+- npm start
 
 ## How to use 
 
