@@ -15,7 +15,7 @@ The app includes a configurable alert system to notify the user if specific weat
 - Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
 ![plot](./preview3.png)
 
-## Technologies Used
+## Technologies Used and set
         
 
 - React: Frontend framework for building the UI.
