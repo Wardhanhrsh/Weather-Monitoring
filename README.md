@@ -1,78 +1,95 @@
-## Real-Time Weather Monitoring Application
+# Aura Weather: An Interactive Forecast Dashboard
 
-A real-time data processing system to allow users to fetch real-time weather data of metro cities in India using OpenWeatherMap API. 
+Aura Weather is a beautifully designed, modern weather application that provides real-time weather data, multi-day forecasts, and an interactive map interface. Built with React and a suite of powerful data visualization libraries, this project transforms raw API data from OpenWeatherMap into an intuitive and user-friendly experience. It serves as a comprehensive portfolio piece demonstrating professional frontend development architecture, robust API integration, and a keen focus on user experience.
 
-The app includes a configurable alert system to notify the user if specific weather thresholds, such as temperature, are breached.
+![Aura Weather Screenshot](image-placeholder.png)
+
+---
+
+## Table of Contents
+
+*   [Features](#features)
+*   [Technical Stack](#technical-stack)
+*   [Architectural Decisions & Problem-Solving](#architectural-decisions--problem-solving)
+*   [Setup and Installation](#setup-and-installation)
+
+---
 
 ## Features
-    
-- Real-Time Weather Data: Fetch current weather details like temperature, humidity, wind speed and weather description.
-![plot](./preview1.png)
 
-- Unit Selection: Allows users to select temperature units between Celsius(°C) and Kelvin(k).
-![plot](./preview2.png)
+Aura Weather is packed with features designed to provide a comprehensive and engaging weather overview:
 
-- Temperature Threshold Alert: User can set a temperature threshold and recieve console alerts when the temperature exceeds.
-![plot](./preview3.png)
+*   **Real-Time Current Weather:** Instantly view the temperature, "feels like" temperature, humidity, wind speed, and a descriptive weather condition for any searched location.
+*   **Interactive Weather Map:** A dynamic map, powered by Leaflet, that centers on the user's location and displays a real-time precipitation radar layer from OpenWeatherMap.
+*   **24-Hour Temperature Chart:** A smooth, interactive line graph built with Chart.js that visualizes the temperature trend over the next 24 hours in 3-hour intervals.
+*   **5-Day Daily Forecast:** A clean, easy-to-read forecast providing the high and low temperatures and weather conditions for the next five days.
+*   **Dynamic UI:** The application features weather-appropriate icons and a dynamic background that changes based on current conditions, creating an immersive user experience.
+*   **Geolocation Support:** A "Use My Location" button allows users to instantly get the weather for their current geographical position using the browser's Geolocation API.
+*   **Robust User Experience:**
+    *   **Loading State:** A loading spinner provides clear feedback to the user while weather data is being fetched.
+    *   **Error Handling:** The application gracefully handles invalid location entries or API errors, presenting a user-friendly message instead of crashing or showing a blank screen.
 
-## Technologies Used
-        
+---
 
-- React: Frontend framework for building the UI.
-- Axios: For making HTTP requests to the OpenWeatherMap API.
-- OpenWeatherMap API: Source of weather data.
-- CSS: For styling the components.
+## Technical Stack
 
-## Installation & Setup
+This project was built using a modern frontend technology stack, focusing on creating a maintainable, scalable, and visually appealing application.
 
-1. Clone the repository
+*   **Core Framework:** **React 18**
+*   **Styling:** **Tailwind CSS** for a utility-first, responsive design approach.
+*   **API Integration:** **Axios** for handling asynchronous HTTP requests to the OpenWeatherMap API.
+*   **Data Visualization:**
+    *   **Chart.js (`react-chartjs-2`)**: For rendering the beautiful and interactive 24-hour temperature line chart.
+    *   **Leaflet (`react-leaflet`)**: For creating the interactive weather map and its data overlays.
+*   **Icons:** **React Icons** for a comprehensive library of high-quality SVG icons.
+*   **Development Environment:** **Create React App**
 
-    - git clone https://github.com/yourusername/weather-monitoring.git
-    - cd weather-monitoring
+---
 
-2. Install Dependencies
-    
-        npm install
+## Architectural Decisions & Problem-Solving
 
-3. Get an API Key
-    
-    - Go to OpenWeatherMap and sign up for a free API key.
-    - Replace the {API key} with your API key generated from OpenWeatherMap API in the project in App.js file.
-            
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid={Your API Key}`.
+Building Aura Weather involved several key engineering decisions aimed at creating a professional-grade application.
 
-4. Run the Application
+### 1. Component-Based Architecture
 
-        npm start
+The application was intentionally architected into a modular, component-based structure. We refactored the initial proof-of-concept into distinct, reusable components (`Search`, `CurrentWeather`, `WeatherMap`, `TemperatureChart`, etc.). This separation of concerns was a critical step that improved maintainability and made it significantly easier to manage, debug, and update individual pieces of functionality.
 
-## How to use 
+### 2. Centralized State Management
 
-1. Search for a location:
+All core application state (e.g., `currentWeather`, `forecast`, `loading`, `error`) is managed within the top-level `App.js` component using React's `useState` hook. This "lifting state up" pattern ensures a single source of truth and a predictable, unidirectional data flow, making the application's behavior easy to reason about and debug.
 
-    - Type the name of any city in the search bar and hit Enter.
-    - The app will display current weather data for that location, including:
-        - Current temperature
-        - Minimum and maximum temperatures
-        - Weather description (e.g., clear, cloudy)
-        - Feels-like temperature
-        - Humidity and wind speed
+### 3. Resilient API Handling
 
-2. Set Temperature Threshold:
+We used `Promise.all` to fetch both the current weather and forecast data concurrently, improving the perceived performance of the application. The implementation includes robust `.catch()` error handling to gracefully manage failed API requests (e.g., a 404 for a non-existent city) and a `.finally()` block to ensure loading states are always correctly toggled. The API key is also securely stored in a `.env` file to prevent exposure.
 
-    - In the UI, set a custom temperature threshold (in °C).
-    - If the temperature exceeds the threshold for the
-    specified number of consecutive updates, an alert message will be logged in the console.
+### 4. Adapting to Technical Constraints
 
-3. Console Alerts:
+The initial plan to use the "One Call" API was pivoted when it was discovered to be behind a paywall. We successfully adapted the application to use the free-tier **"5 Day / 3-Hour Forecast"** endpoint. The daily forecast was then programmatically derived by filtering this data for midday entries, demonstrating the ability to work creatively within real-world technical limitations.
 
-    - If the current temperature exceeds the set threshold, the app will display a console alert message like:
+---
 
-        "ALERT: Temperature exceeds 35°C."
+## Setup and Installation
 
-## UI Preview
-- Weather Data
-    - Displays city name, current average temperature, and other weather details.
+To run this project locally, follow these steps:
 
-## API Used
-    
-- OpenWeatherMap API: Provides real-time weather data for metro cities in India.
+1.  **Clone the repository:**
+    ```
+    git clone https://github.com/Wardhanhrsh/Weather-Monitoring.git
+    cd Weather-Monitoring
+    ```
+2.  **Install dependencies:**
+    ```
+    npm install
+    ```
+3.  **Set up your environment variables:**
+    *   Create a file named `.env` in the root of the project.
+    *   Add your OpenWeatherMap API key to this file. This is a critical security step to keep your key private.
+      ```
+      REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+      ```
+4.  **Start the development server:**
+    ```
+    npm start
+    ```
+    The application should now be running on `http://localhost:3000`.
+
