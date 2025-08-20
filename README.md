@@ -2,10 +2,9 @@
 
 Aura Weather is a beautifully designed, modern weather application that provides real-time weather data, multi-day forecasts, and an interactive map interface. Built with React and a suite of powerful data visualization libraries, this project transforms raw API data from OpenWeatherMap into an intuitive and user-friendly experience. It serves as a comprehensive portfolio piece demonstrating professional frontend development architecture, robust API integration, and a keen focus on user experience.
 
-![Aura Weather Screenshot]
-    (image3.png)
-    (image2.png)
-    (image1.png)
+![Aura Weather Screenshot](image3.png)
+![Aura Weather Screenshot](image2.png)
+![Aura Weather Screenshot](image1.png)
 
 ---
 
